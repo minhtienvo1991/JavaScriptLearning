@@ -1,0 +1,29 @@
+<html>
+  <head> </head>
+
+  <main>
+    <body>
+      <span>Nhap vao so</span>
+      <input id="number" />
+      <input type="submit" onclick="tinhtong()" value="In ra"></button>
+      <p id="kqua"></p>
+      <script type="text/javascript">
+        function tinhtong() {
+          var n = document.getElementById("number").value;
+          var i = 1;
+          var tong = 0;
+          var tam = 0;
+          while (i <= n) {
+            if (i % 3 == 0) {
+              tam = tam + "+" + i;
+              tong += i;
+            }
+            i++;
+          }
+          document.getElementById("kqua").innerHTML =
+            "Tong so chia het cho 3 la " + tam + "=" + tong;
+        }
+      </script>
+    </body>
+  </main>
+</html>

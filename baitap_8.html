@@ -1,0 +1,41 @@
+<html>
+  <head> </head>
+  <main>
+    <body>
+      <span>Enter Number:</span>
+      <input id="number" />
+      <!-- <input onclick="insonguyento" type="submit" value="kqua" />
+       -->
+      <button button type="button" onclick="insonguyento()">In ket qua</button>
+      <p id="ketqua"></p>
+
+      <script>
+        function songuyento(a) {
+          var flag = true;
+          if (a > 1) {
+            for (var i = 2; i <= Math.sqrt(a); i++) {
+              if (a % i == 0) {
+                flag = false;
+                break;
+              }
+            }
+          } else flag = false;
+          return flag;
+        }
+
+        function insonguyento() {
+          var n;
+          var text_result = "";
+          n = document.getElementById("number").value;
+          for (var j = 2; j <= n; j++) {
+            if (songuyento(j)) {
+              text_result = text_result + " " + j;
+            }
+          }
+          document.getElementById("ketqua").innerHTML =
+            "cac so nguyen to tu 1->" + n + "  la: " + text_result;
+        }
+      </script>
+    </body>
+  </main>
+</html>

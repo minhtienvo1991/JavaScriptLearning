@@ -1,0 +1,23 @@
+<html>
+  <head> </head>
+
+  <main>
+    <body>
+      <script type="text/javascript">
+        function tinhbt(n) {
+          var tong = 0;
+          for (var i = 1; i <= n; i++) {
+            tong += 1 / i;
+          }
+          return tong;
+        }
+        var n = parseInt(prompt("nhap n:"));
+        if (n <= 0) {
+          alert("nhap sai.nhap so lon hon 0");
+        } else {
+          document.write("gia tri bieu thuc " + tinhbt(n));
+        }
+      </script>
+    </body>
+  </main>
+</html>

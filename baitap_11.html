@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="baitap_11.css" />
+  </head>
+  <main>
+    <body>
+      <div>
+        <nav class="danhsachhienthi">
+          <div class="danhsach">
+            <div class="ds_anh">
+              <ol>
+                <li>
+                  Color Silver
+                  <input
+                    type="image"
+                    src="./image/maubac.jpg"
+                    width="100px"
+                    id="maubac"
+                    onclick="htcta(this)"
+                  />
+                </li>
+                <li>
+                  Color Black
+                  <input
+                    type="image"
+                    src="./image/maudenthanchi.jpg"
+                    id="maudenthanchi"
+                    width="100px"
+                    onclick="htcta(this)"
+                  />
+                </li>
+                <li>
+                  Color Navi
+                  <input
+                    type="image"
+                    src="./image/mauxanhdaiduong.jpg"
+                    id="mauxanhdaiduong"
+                    width="100px"
+                    onclick="htcta(this)"
+                  />
+                </li>
+                <li>
+                  Color Gold
+                  <input
+                    type="image"
+                    src="./image/mauvang.jpg"
+                    id="mauvang"
+                    width="100px"
+                    onclick="htcta(this)"
+                  />
+                </li>
+              </ol>
+            </div>
+            <div>
+              <img id="ht1" />
+            </div>
+          </div>
+        </nav>
+      </div>
+      <script>
+        document.getElementById("ht1").src = "./image/maubac.jpg";
+        function htcta(param) {
+          document.getElementById("ht1").src = param.src;
+        }
+      </script>
+    </body>
+  </main>
+</html>
